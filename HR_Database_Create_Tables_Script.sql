@@ -25,7 +25,7 @@ CREATE TABLE JOB_HISTORY (
                             EMPL_ID CHAR(5) NOT NULL,
                             START_DATE DATE NOT NULL,
                             JOBS_ID CHAR(3) NOT NULL,
-                            DEPT_ID CHAR(1) NOT NULL,
+                            DEPT_ID CHAR(10) NOT NULL,
                             PRIMARY KEY (EMPL_ID, START_DATE)
                           );
 
