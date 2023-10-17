@@ -22,12 +22,13 @@ CREATE TABLE EMPLOYEES (
                         );
 
 CREATE TABLE JOB_HISTORY (
-                            EMPL_ID CHAR(9) NOT NULL,
-                            START_DATE DATE,
-                            JOBS_ID CHAR(9) NOT NULL,
-                            DEPT_ID CHAR(9),
-                            PRIMARY KEY (EMPL_ID,JOBS_ID)
+                            EMPL_ID CHAR(5) NOT NULL,
+                            START_DATE DATE NOT NULL,
+                            JOBS_ID CHAR(3) NOT NULL,
+                            DEPT_ID CHAR(1) NOT NULL,
+                            PRIMARY KEY (EMPL_ID, START_DATE)
                           );
+
 
 CREATE TABLE JOBS (
                     JOB_IDENT CHAR(9) NOT NULL,
